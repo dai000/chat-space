@@ -1,0 +1,59 @@
+.wrapper
+
+  = render 'shared/sub_bar'
+
+  .main
+    .hi
+      .hi-left
+        .hi-left_title
+          グループ名
+        %ul.hi-left__members
+          Menber :
+          %ul.member
+          メンバー
+          %ul.member
+          メンバー
+          %ul.member
+          メンバー
+      
+      .hi-right
+        .hi-right__button
+          edit
+
+    .middles    
+      .middle
+        .middle-text
+          .middle-text__name
+            メンバー
+          .middle-text__date
+            2019
+          .middle-comment
+          .middle-comment__message
+            メッセージ
+      .middle
+        .middle-text
+          .middle-text__name
+            メンバー
+          .middle-text__date
+            2019
+          .middle-comment
+          .middle-comment__message
+            メッセージ
+      .middle
+        .middle-text
+          .middle-text__name
+            メンバー
+          .middle-text__date
+            2019
+          .middle-comment
+          .middle-comment__message
+            メッセージ
+
+    .low
+      %form
+        %input.form__message
+        .form__text
+          %label.form__text__image
+            =fa_icon 'picture-o', class: 'icon'
+            %input.hidden{type: 'file'}
+        %input.form__submit{type: 'submit', value: 'Send'}
