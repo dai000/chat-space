@@ -20,35 +20,9 @@
         .hi-right__button
           edit
 
-    = render @messages
-    -# .middles    最後に消す
-    -#   .middle
-    -#     .middle-text
-    -#       .middle-text__name
-    -#         -# メンバー
-    -#       .middle-text__date
-    -#         -# 2019
-    -#       .middle-comment
-    -#       .middle-comment__message
-    -#         -# メッセージ
-    -#   .middle
-    -#     .middle-text
-    -#       .middle-text__name
-    -#         -# メンバー
-    -#       .middle-text__date
-    -#         -# 2019
-    -#       .middle-comment
-    -#       .middle-comment__message
-    -#         -# メッセージ
-    -#   .middle
-    -#     .middle-text
-    -#       .middle-text__name
-    -#         -# メンバー
-    -#       .middle-text__date
-    -#         -# 2019
-    -#       .middle-comment
-    -#       .middle-comment__message
-    -#         -# メッセージ
+    .messages
+      = render @messages
+
 
     .low
       .form
