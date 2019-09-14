@@ -35,7 +35,7 @@ $(function(){
       processData: false,
       contentType: false
     })
-    .done(function(data){
+    .always(function(data){
       var html = buildHTML(data);
       $('.messages').append(html);
       $('form')[0].reset();
