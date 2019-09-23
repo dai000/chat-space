@@ -73,7 +73,6 @@ $('#user-search-field').on("keyup", function(){
    var user_id = $(this).data('user-id');
    $(this).parent().removeAttr();
    appendMember(name ,user_id);
-   console.log(name ,user_id)
    });  
 
  
@@ -82,7 +81,6 @@ $('#user-search-field').on("keyup", function(){
         var user_id = $(this).data('user-id');
         $(this).parent().remove();
         var user={name: name, id: user_id}
-        console.log(name,user_id)
         appendUser(user);
         });  
  
