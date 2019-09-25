@@ -6,20 +6,16 @@
     .hi
       .hi-left
         .hi-left_title
-          グループ名
+          = @group.name
         %ul.hi-left__members
-          Menber :
-          %ul.member
-          メンバー
-          %ul.member
-          メンバー
-          %ul.member
-          メンバー
+          Member :
+          - @group.users.each do |user|
+            = user.name
       
       .hi-right
         .hi-right__button
-          edit
-
+          =link_to "Edit", edit_group_path(@group)
+ 
     .messages
       = render @messages
 
