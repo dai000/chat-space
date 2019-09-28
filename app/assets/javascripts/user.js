@@ -1,4 +1,4 @@
-$(document).on('turbolinks:load', function(){
+$(function(){
 
     var search_list = $("#user-search-result");
     var member_list = $("#member-append");
@@ -71,8 +71,8 @@ $(document).on('turbolinks:load', function(){
     $(document).on('click','.user-search-add', function() {
     var name = $(this).data('user-name');
     var user_id = $(this).data('user-id');
-    $(this).parent().removeAttr();
     appendMember(name ,user_id);
+    $(this).parent().remove();
     });  
 
 
