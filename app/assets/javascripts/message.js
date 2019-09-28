@@ -37,7 +37,6 @@ $(function(){
       contentType: false
     })
     .done(function(data){
-      console.log(data);
       var html = buildHTML(data);
       $('.messages').append(html);
       $('form')[0].reset();
@@ -62,7 +61,6 @@ $(function(){
         data: {id: last_message_id}
       })
       .done(function(messages) {
-        console.log(messages);
         var insertHTML = '';
 
         messages.forEach(function(message){
