@@ -25,8 +25,9 @@
       = f.label "チャットメンバー", class: "chat-group-form__label"     
     .chat-group-form__field--right
       #member-append
-        .chat-group-user.clearfix
-          - group.users.each do |user| 
+        - group.users.each do |user| 
+          .chat-group-user.clearfix
+            %input{name: 'group[user_ids][]', type: 'hidden', value: user.id}
             .chat-group-user__name 
               = user.name
             .user-search-remove.chat-group-user__btn.chat-group-user__btn--remove.js-remove-btn{"data-user-id": user.id, "data-user-name": user.name}削除
